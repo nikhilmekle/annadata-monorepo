@@ -8,14 +8,20 @@ import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
 
 //app config
+dotenv.config();
+
 const app = express();
 const port = process.env.PORT || 8080;
 
+app.use(
+  cors({
+    origin: "https://annadata-0yly.onrender.com", // your frontend Render URL
+    credentials: true,
+  })
+);
+
 //middleware
 app.use(express.json());
-app.use(cors());
-
-dotenv.config();
 
 //db connection
 connectDb();
