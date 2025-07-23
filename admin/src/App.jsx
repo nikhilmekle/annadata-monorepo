@@ -7,7 +7,7 @@ import Orders from "./Pages/Orders/Orders";
 import { ToastContainer } from "react-toastify";
 import List from "./Pages/List/List";
 const App = () => {
-  const url = "http://localhost:8080";
+  const url = "https://annadata-monorepo.onrender.com";
   return (
     <div>
       <ToastContainer />
