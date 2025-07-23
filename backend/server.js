@@ -15,10 +15,14 @@ const port = process.env.PORT || 8080;
 
 app.use(
   cors({
-    origin: "https://annadata-0yly.onrender.com", // your frontend Render URL
+    origin: [
+      "https://annadata-0yly.onrender.com",
+      "https://annadata-admin.onrender.com",
+    ],
     credentials: true,
   })
 );
+
 
 //middleware
 app.use(express.json());
