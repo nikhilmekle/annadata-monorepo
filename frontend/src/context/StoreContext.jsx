@@ -5,7 +5,7 @@ const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItem, setCartItems] = useState({});
-  const url = "http://localhost:8080";
+  const url = "https://annadata-monorepo.onrender.com";
   const [token, setToken] = useState("");
   const [food_list, setfood_list] = useState([]);
 
