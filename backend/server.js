@@ -18,11 +18,11 @@ app.use(
     origin: [
       "https://annadata-0yly.onrender.com",
       "https://annadata-admin.onrender.com",
+      "http://localhost:5173",
     ],
     credentials: true,
   })
 );
-
 
 //middleware
 app.use(express.json());
